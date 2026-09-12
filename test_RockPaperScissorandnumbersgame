@@ -1,0 +1,15 @@
+from project import inrange
+from project import won
+from project import validesign
+
+def test_inrange():
+    assert inrange(101) == False
+    assert inrange(50) == True
+
+def test_won():
+    assert won("paper", "rock") == True
+    assert won("rock", "paper") == False
+
+def test_validsign():
+    assert validesign("rock") == True
+    assert validesign("banana") == False
